@@ -1,7 +1,8 @@
-## Overview
+# Overview
 This is the report for Team 1 for Project Delivery 1
 
-Teammates:
+### Teammates:
+> **Course: CS 631, Section: 1J1 - Data Management System Design**
 
 |member|email address|
 |-|-|
@@ -9,12 +10,25 @@ Teammates:
 |Kranthi Gunuru|kg62@njit.edu|
 |Shawn Cicoria|sc2443@njit.edu|
 
+
+### Goals
+The initial goal of this stage is to establish a basline Entity Relationsip model based upon the requirements initially provided. It's most likely going to change as further stages emerge and physical modeling starts.
+
+While the first part of the requirements document articulates much of the Domain model needs, constraints, it is the Application Functional requirements that can also affect the model. As an example, the "Application Design section" states:
+
+
+>The last application is crucial in decision making by the analysts and managers. For instance, it will allow the introduction of new room types, service types and breakfast types or modification of certain services, room and/or breakfast types, the suggestion of new offers to increase the profit of the hotels.
+
+Given this statement, the entities for room types, service types, breakfast types are not restricted as simple multi-value attributes.
+
 ## Assumptions
 
 1. Customer is using credit card only for online reservation,hence total participation in uses relationship and min-max is (1,N)
 2. Not every customer writes reviews, hence partial participation of customer and min-max is (0,N)
 3. A hotel can have zero reviews,thus partial participation in Writes_For relationship and min-max is (0,N)
 4. ratings cannot be 0 or less
+5. Credit Card number must be unique, since we have to have only one key per entity[as specified in the Project Deliverable1 requirements point#2(ii)]
+6. Added a key for Room Reservation ID
 
 ## Constraints
 
@@ -24,6 +38,7 @@ Teammates:
 
 ## Challenges
 - how are room rates changed over time; how does this affect discounts periods.
+- an area that we are still thining on is linkage between reviews and what is being reviewed - rooms, service, breakfast. 
 
 # Enhanced Entity Relationship Diagram (EERD)
 ![eerd](./diagrams/hotel-entity-0.1.png)
