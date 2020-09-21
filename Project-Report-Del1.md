@@ -23,18 +23,20 @@ Given this statement, the entities for room types, service types, breakfast type
 
 ## Assumptions
 
-1. Customer is using credit card only for online reservation,hence total participation in uses relationship and min-max is (1,N)
-2. Not every customer writes reviews, hence partial participation of customer and min-max is (0,N)
-3. A hotel can have zero reviews,thus partial participation in Writes_For relationship and min-max is (0,N)
-4. ratings cannot be 0 or less
-5. Credit Card number must be unique, since we have to have only one key per entity[as specified in the Project Deliverable1 requirements point#2(ii)]
-6. Added a key for Room Reservation ID
+1. Customer is using credit card only for online reservation,hence total participation in uses relationship and min-max is (1,N).
+2. Not every customer writes reviews, hence partial participation of customer and min-max is (0,N).
+3. A hotel can have zero reviews,thus partial participation in Writes_For relationship and min-max is (0,N).
+4. Ratings cannot be 0 or less.
+5. Credit Card number must be unique, since we have to have only one key per entity[as specified in the Project Deliverable1 requirements point#2(ii)].
+6. Added a key for Room Reservation.
 
 ## Constraints
 
-- booking for a room cannot overlap dates for same room for any other reservation - "not allow reservations for the same room with overlapping reservation periods"
-- room discounts - "every year" - either 365 between or use calendar year
-- breakfast orders cannot exceed people count per room
+- booking for a room cannot overlap dates for same room for any other reservation - "not allow reservations for the same room with overlapping reservation periods".
+- room discounts - "every year" - either 365 between or use calendar year.
+- breakfast orders cannot exceed people count per room.
+- system must ensure that customers can only write reviews for those rooms, breakfast types and service types they reserved.
+- added a key Room_Reservation_ID for the entity Room Reservation.
 
 ## Challenges
 - how are room rates changed over time; how does this affect discounts periods.
