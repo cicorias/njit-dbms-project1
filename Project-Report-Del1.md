@@ -45,9 +45,6 @@ Given this statement, the entities for room types, service types, breakfast type
 # Enhanced Entity Relationship Diagram (EERD)
 ![eerd](./diagrams/hotel-entity-0.1.png)
 
-
-# Enhanced Entity Relationship Diagram (EERD)
-![eerd](./diagrams/hotel-entity-0.1-rotated.png)
 # Extracted Requirements
 Utilizing a review of the requirements document and to provide succinct capture of requirements.
 
