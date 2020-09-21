@@ -1,5 +1,0 @@
-1.Customer is using credit card only for online reservation,hence total participation in uses relationship and min-max is (1,N)
-2.Not every customer writes reviews, hence partial participation of customer and min-max is (0,N)
-3.A hotel can have zero reviews,thus partial participation in Writes_For relationship and min-max is (0,N)
-4. Credit Card number must be unique, since we have to have only one key per entity[as specified in the Project Deliverable1 requirements point#2(ii)]
-5. Added a key for Room Reservation ID
